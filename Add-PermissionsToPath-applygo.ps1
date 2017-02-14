@@ -1,7 +1,5 @@
 # This script takes an optional parameter of a path.  If excluded, the path will
 # be taken from the location where the PowerShell script is called.
-# http://www.xbtechnologyreview.com/uncategorized/powershell-script-to-recursively-add-permissions-with-blocked-inheritance/
-
 
 param([String[]] $path=(get-location).Path)
 
@@ -15,11 +13,11 @@ param([String[]] $path=(get-location).Path)
 # $Propagation     – Defines how permissions are propagated to all child objects
 # $Type                      – Defines whether access is Allowed or Denied
 
-$Identity = “DOMAIN\USER”
-$Rights = “Read”
-$Inheritance = @(“ObjectInherit”, “ContainerInherit”)
-$Propagation = “None”
-$Type = “Allow”
+$Identity = "DOMAIN\USER"
+$Rights = "Read"
+$Inheritance = @("ObjectInherit"�, "ContainerInherit")
+$Propagation = "None"
+$Type = "Allow"
 $Rule = New-Object System.Security.AccessControl.FileSystemAccessRule( `
 $Identity, $Rights, $Inheritance, $Propagation, $Type)
 
