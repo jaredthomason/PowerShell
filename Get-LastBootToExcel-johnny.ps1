@@ -16,7 +16,7 @@ $d.Font.Bold = $True
 $d.EntireColumn.AutoFit()
 $m = 2
 
-$x = get-content C:\Scripts\powershell\lastreboot\johnny.txt
+$x = get-content .\johnny.txt
 Write-Host "Getting List from FIle"
 
 foreach ($i in $x)
