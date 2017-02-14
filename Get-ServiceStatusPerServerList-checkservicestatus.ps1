@@ -46,4 +46,5 @@ write-output $obj
 }
 }
 
-gc C:\Scripts\POWERSHELL\CheckServiceStatus\systems.txt | RSCDsvc | ft ServerName,ServiceName,Status,Reachable -AutoSize | Out-File C:\Scripts\POWERSHELL\CheckServiceStatus\Report.txt
+gc C:\Scripts\POWERSHELL\CheckServiceStatus\systems.txt | RSCDsvc | ft ServerName,ServiceName,Status,Reachable  `
+      -AutoSize | Out-File C:\Scripts\POWERSHELL\CheckServiceStatus\Report.txt
