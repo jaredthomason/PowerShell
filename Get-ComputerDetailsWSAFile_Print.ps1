@@ -152,7 +152,7 @@ function get-RegUninstallList ([string]$strComputer) {
 		}
 	}
 
-	# Drill through each key from the list and pull out the value of “DisplayName”
+	# Drill through each key from the list and pull out the value of â€œDisplayNameâ€
 	if ($EncounteredError -eq 0) {
 		$installedApps = @()
 		Foreach ($key in $subkeys) {
