@@ -8,18 +8,18 @@ param([String[]] $path=(get-location).Path)
 # The following information determines the user/group that will be used and the
 # permissions that will be set accordingly at every location that matches the
 # criteria of having inheritance blocked.
-# $Identity               – Identity of the user or group being granted permissions
-# $Rights                   – The rights to be assigned
-# $Inheritance     – Defines if subsequent objects and containers will receive the
+# $Identity               â€“ Identity of the user or group being granted permissions
+# $Rights                   â€“ The rights to be assigned
+# $Inheritance     â€“ Defines if subsequent objects and containers will receive the
 #                                         the new permissions.
-# $Propagation     – Defines how permissions are propagated to all child objects
-# $Type                      – Defines whether access is Allowed or Denied
+# $Propagation     â€“ Defines how permissions are propagated to all child objects
+# $Type                      â€“ Defines whether access is Allowed or Denied
 
-$Identity = “DOMAIN\USER”
-$Rights = “Read”
-$Inheritance = @(“ObjectInherit”, “ContainerInherit”)
-$Propagation = “None”
-$Type = “Allow”
+$Identity = â€œDOMAIN\USERâ€
+$Rights = â€œReadâ€
+$Inheritance = @(â€œObjectInheritâ€, â€œContainerInheritâ€)
+$Propagation = â€œNoneâ€
+$Type = â€œAllowâ€
 $Rule = New-Object System.Security.AccessControl.FileSystemAccessRule( `
 $Identity, $Rights, $Inheritance, $Propagation, $Type)
 
