@@ -15,7 +15,7 @@ param([String[]] $path=(get-location).Path)
 
 $Identity = "DOMAIN\USER"
 $Rights = "Read"
-$Inheritance = @("ObjectInherit"ù, "ContainerInherit")
+$Inheritance = @("ObjectInherit","ContainerInherit")
 $Propagation = "None"
 $Type = "Allow"
 $Rule = New-Object System.Security.AccessControl.FileSystemAccessRule( `
