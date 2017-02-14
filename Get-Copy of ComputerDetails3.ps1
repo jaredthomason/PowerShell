@@ -156,7 +156,7 @@ Write-log "$(get-date -format "MM-dd-yyyy HH:mm:ss") - ERROR: Could not access t
 
 Write-log "$(get-date -format "MM-dd-yyyy HH:mm:ss") - Starting to drill through and acquire the names of the applications"
 	# Drill through each key from the list and pull out the value of 
-	# ìDisplayNameî
+	# ‚ÄúDisplayName‚Äù
 	if ($EncounteredError -eq 0) {
 		$installedApps = @()
 		Foreach ($key in $subkeys) {
@@ -349,7 +349,7 @@ Write-log "$(get-date -format "MM-dd-yyyy HH:mm:ss") - ERROR: Could not access t
 
 Write-log "$(get-date -format "MM-dd-yyyy HH:mm:ss") - Starting to drill through and acquire the names of the applications"
 		# Drill through each key from the list and pull out the value of 
-		# ìDisplayNameî
+		# ‚ÄúDisplayName‚Äù
 		if ($EncounteredError -eq 0) {
 			$installedApps = @()
 			Foreach ($key in $subkeys) 
