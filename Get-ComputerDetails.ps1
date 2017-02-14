@@ -79,7 +79,7 @@ Foreach ($server in $ComputerList)
 		}
 
 		# Drill through each key from the list and pull out the value of 
-		# “DisplayName” – Write to the Host console the name of the computer 
+		# â€œDisplayNameâ€ â€“ Write to the Host console the name of the computer 
 		# with the application beside it
 		if ($EncounteredError -eq 0) {
 			$installedApps = @()
