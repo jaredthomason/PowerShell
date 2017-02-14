@@ -131,7 +131,7 @@ Foreach ($server in $ComputerList)
 		}
 
 		# Drill through each key from the list and pull out the value of 
-		# “DisplayName”
+		# â€œDisplayNameâ€
 		if ($EncounteredError -eq 0) {
 			$installedApps = @()
 			Foreach ($key in $subkeys) 
